@@ -1,4 +1,6 @@
-# Put your custom build plans here
+# This is my Iosevka Fixed Custom font
+# The goal is to get close to the size of the following font
+# - Misc-Fixed-medium-R-*-*-13-120-75-75-C-120-ISO10646-1
 [buildPlans.IosevkaFixedCustom]
 family = "Iosevka Fixed Custom"
 spacing = "fixed"
