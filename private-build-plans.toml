@@ -5,10 +5,10 @@
 family = "Iosevka Fixed Custom"
 spacing = "fixed"
 serifs = "sans"
-noLigation = true
+noLigation = true # Fixed by defintion doesn't have ligation
 noCvSs = true
 exportGlyphNames = false # Useful for terminals like Kitty
-outFormat = ["ttf"] # Just gives you the standard desktop files
+outFormat = ["ttf"] # Only generte the standard desktop fonts
 
 [buildPlans.IosevkaFixedCustom.variants.design]
 zero = "tall-slashed"  # Prefer Zero with a slash
@@ -20,23 +20,32 @@ leading = 1000    # Tightest vertical spacing
 cap = 700         # Shorter caps
 xheight = 510     # Balanced lowercase
 
-[buildPlans.IosevkaFixedCustom.widths.normal]
+[buildPlans.IosevkaFixedCustom.widths.Normal]
 shape = 480       # Extremely narrow, matching fixed 6x13
 menu = 5
+css = "normal"
+
+[buildPlans.IosevkaFixCustom.weights.Regular]
+shape = 400
+menu = 400
+css = 400
 
 [buildPlans.IosevkaFixedCustom.weights.Bold]
 shape = 700
 menu = 700
+css = 700
 
 [buildPlans.IosevkaFixedCustom.slopes.Upright]
 angle = 0
 shape = "upright"
 menu = "upright"
+css = "normal"
 
 [buildPlans.IosevkaFixedCustom.slopes.Italic]
 angle = 9.4
 shape = "italic"
 menu = "italic"
+css = "italic"
 
 # To enable TTC building, uncomment the following section and write your collect plans
 [collectPlans.IosevkaFixedCustom]
