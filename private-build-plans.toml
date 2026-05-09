@@ -15,14 +15,23 @@ zero = "tall-slashed"  # Prefer Zero with a slash
 one = "base" # One with a base and slant
 l = "serifed-flat-tailed"   # Better legibility for 'l'
 
+#[buildPlans.IosevkaFixedCustom.metricOverride]
+#leading = 1000    # Tightest vertical spacing
+#1 #cap = 700         # Shorter caps
+#1 #xheight = 510     # Balanced lowercase
+#cap = 640        # SHORTER CAPS: Matches the low profile on the left
+#xheight = 460    # SHORTER LOWERCASE: Creates that "squat" look
+#ascender = 660   # PULLS DOWN TOPS: Forces letters like 'h' or 'k' to be short
+#descender = -180 # PULLS UP BOTTOMS: Makes the descent very shallow
+
 [buildPlans.IosevkaFixedCustom.metricOverride]
-leading = 1000    # Tightest vertical spacing
-#cap = 700         # Shorter caps
-#xheight = 510     # Balanced lowercase
-cap = 640        # SHORTER CAPS: Matches the low profile on the left
-xheight = 460    # SHORTER LOWERCASE: Creates that "squat" look
-ascender = 660   # PULLS DOWN TOPS: Forces letters like 'h' or 'k' to be short
-descender = -180 # PULLS UP BOTTOMS: Makes the descent very shallow
+leading = 900      # DRASTIC REDUCTION: Forces the rows to be closer together
+xheight = 420      # SHRINK THE 'a': This physically makes lowercase letters shorter
+cap = 660          # Lowered to match the new squat look
+ascender = 750     # RESTORE THE 'l' & 'd': Gives back the height for legibility
+descender = -200   # Subtle tail for 'p' and 'g'
+win-ascent = 750   # Technical fix for Windows/X11 clipping
+win-descent = 250  # Technical fix for Windows/X11 clipping
 
 [buildPlans.IosevkaFixedCustom.widths.Normal]
 shape = 480       # Extremely narrow, matching fixed 6x13
