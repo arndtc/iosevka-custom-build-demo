@@ -15,7 +15,7 @@ zero = "tall-slashed"  # Prefer Zero with a slash
 one = "base" # One with a base and slant
 l = "serifed-flat-tailed"   # Better legibility for 'l'
 
-[buildPlans.IosevkaFixedCustom.metric-override]
+[buildPlans.IosevkaFixedCustom.metricOverride]
 leading = 1000    # Tightest vertical spacing
 cap = 700         # Shorter caps
 xheight = 510     # Balanced lowercase
