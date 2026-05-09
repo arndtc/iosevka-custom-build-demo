@@ -17,8 +17,12 @@ l = "serifed-flat-tailed"   # Better legibility for 'l'
 
 [buildPlans.IosevkaFixedCustom.metricOverride]
 leading = 1000    # Tightest vertical spacing
-cap = 700         # Shorter caps
-xheight = 510     # Balanced lowercase
+#cap = 700         # Shorter caps
+#xheight = 510     # Balanced lowercase
+cap = 640        # SHORTER CAPS: Matches the low profile on the left
+xheight = 460    # SHORTER LOWERCASE: Creates that "squat" look
+ascender = 660   # PULLS DOWN TOPS: Forces letters like 'h' or 'k' to be short
+descender = -180 # PULLS UP BOTTOMS: Makes the descent very shallow
 
 [buildPlans.IosevkaFixedCustom.widths.Normal]
 shape = 480       # Extremely narrow, matching fixed 6x13
