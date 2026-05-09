@@ -39,7 +39,7 @@ menu = 5
 css = "normal"
 
 [buildPlans.IosevkaFixedCustom.weights.Regular]
-shape = 400
+shape = 500
 menu = 400
 css = 400
 
