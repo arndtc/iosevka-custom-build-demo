@@ -13,9 +13,13 @@ outFormat = ["ttf"] # Only generte the standard desktop fonts
 [buildPlans.IosevkaFixedCustom.variants.design]
 zero = "tall-slashed"  # Prefer Zero with a slash
 one = "base" # One with a base and slant
-#l = "serifed-flat-tailed"   # Better legibility for 'l'
+a = "single-storey"                           # Matches 'o' roundness better
+l = "serifed-flat-tailed"   # Better legibility for 'l'
+o = "oval"                                    # More rounded shape
+g = "single-storey"                           # Cleaner at small sizes
+r = "serifless-top-left-serifless-bottom-left" # Thinner, cleaner 'r'
 w = "rounded-vertical-sides-serifless" #Better legibility for 'w'
-#x = "straight"            # Ensures the 'x' doesn't look blurred
+x = "straight"            # Ensures the 'x' doesn't look blurred
 
 #not there missind dynamic range on letters like "d" and "l" and a very tall
 #[buildPlans.IosevkaFixedCustom.metricOverride]
@@ -58,7 +62,7 @@ menu = 5
 css = "normal"
 
 [buildPlans.IosevkaFixedCustom.weights.Regular]
-shape = 460
+shape = 420
 menu = 400
 css = 400
 
