@@ -13,8 +13,10 @@ outFormat = ["ttf"] # Only generte the standard desktop fonts
 [buildPlans.IosevkaFixedCustom.variants.design]
 zero = "tall-slashed"  # Prefer Zero with a slash
 one = "base" # One with a base and slant
-l = "serifed-flat-tailed"   # Better legibility for 'l'
+#l = "serifed-flat-tailed"   # Better legibility for 'l'
+w = "rounded-vertical-sides-serifless" #Better legibility for 'w'
 
+#not there missind dynamic range on letters like "d" and "l" and a very tall
 #[buildPlans.IosevkaFixedCustom.metricOverride]
 #leading = 1000    # Tightest vertical spacing
 #1 #cap = 700         # Shorter caps
@@ -24,7 +26,7 @@ l = "serifed-flat-tailed"   # Better legibility for 'l'
 #ascender = 660   # PULLS DOWN TOPS: Forces letters like 'h' or 'k' to be short
 #descender = -180 # PULLS UP BOTTOMS: Makes the descent very shallow
 
-# Too blocky an hard to read.
+# Too blocky an hard to read. but smaller terminal with overlapping lines
 #[buildPlans.IosevkaFixedCustom.metricOverride]
 #leading = 900      # DRASTIC REDUCTION: Forces the rows to be closer together
 #xheight = 420      # SHRINK THE 'a': This physically makes lowercase letters shorter
@@ -34,12 +36,20 @@ l = "serifed-flat-tailed"   # Better legibility for 'l'
 #win-ascent = 750   # Technical fix for Windows/X11 clipping
 #win-descent = 250  # Technical fix for Windows/X11 clipping
 
+#This got too big
+#[buildPlans.IosevkaFixedCustom.metricOverride]
+#leading = 1050     # INCREASE: Gives a tiny bit of air back between lines
+#xheight = 490      # INCREASE: Makes the body of 'a' and 'o' readable again
+#cap = 710          # INCREASE: Aligns better with a 13px total height
+#ascender = 750     # KEEP: Keeps the 'l' and 'd' tall for clarity
+#descender = -230   # DEEPEN: Prevents 'p' and 'g' from looking like 'o'
+
 [buildPlans.IosevkaFixedCustom.metricOverride]
-leading = 1050     # INCREASE: Gives a tiny bit of air back between lines
-xheight = 490      # INCREASE: Makes the body of 'a' and 'o' readable again
-cap = 710          # INCREASE: Aligns better with a 13px total height
-ascender = 750     # KEEP: Keeps the 'l' and 'd' tall for clarity
-descender = -230   # DEEPEN: Prevents 'p' and 'g' from looking like 'o'
+leading = 1000    # RESTORE: Matches the 13px row height of the left
+xheight = 460     # TIGHTEN: Shrinks the 'a' body for better line spacing
+cap = 680         # TIGHTEN: Keeps capitals from pushing the line height
+ascender = 750    # KEEP: Essential for 'l' and 'd' legibility
+descender = -210  # TIGHTEN: Prevents the tails from being too long
 
 [buildPlans.IosevkaFixedCustom.widths.Normal]
 shape = 480       # Extremely narrow, matching fixed 6x13
