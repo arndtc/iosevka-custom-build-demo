@@ -59,12 +59,12 @@ ascender = 750    # KEEP: Essential for 'l' and 'd' legibility
 descender = -210  # TIGHTEN: Prevents the tails from being too long
 
 [buildPlans.IosevkaFixedCustom.widths.Normal]
-shape = 580       # Extremely narrow, matching fixed 6x13
+shape = 515       # Extremely narrow, matching fixed 6x13
 menu = 5
 css = "normal"
 
 [buildPlans.IosevkaFixedCustom.weights.Regular]
-shape = 420
+shape = 410
 menu = 400
 css = 400
 
