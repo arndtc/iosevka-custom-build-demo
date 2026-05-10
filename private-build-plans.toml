@@ -14,9 +14,7 @@ outFormat = ["ttf"] # Only generte the standard desktop fonts
 zero = "tall-slashed"  # Prefer Zero with a slash
 one = "base" # One with a base and slant
 l = "serifed-flat-tailed"   # Better legibility for 'l'
-o = "oval"                                    # More rounded shape
-g = "single-storey"                           # Cleaner at small sizes
-r = "serifless-top-left-serifless-bottom-left" # Thinner, cleaner 'r'
+r = "narrow-hook-serifless" # Thinner, cleaner 'r'
 w = "rounded-vertical-sides-serifless" #Better legibility for 'w'
 x = "straight"            # Ensures the 'x' doesn't look blurred
 
@@ -56,7 +54,7 @@ ascender = 750    # KEEP: Essential for 'l' and 'd' legibility
 descender = -210  # TIGHTEN: Prevents the tails from being too long
 
 [buildPlans.IosevkaFixedCustom.widths.Normal]
-shape = 500       # Extremely narrow, matching fixed 6x13
+shape = 580       # Extremely narrow, matching fixed 6x13
 menu = 5
 css = "normal"
 
