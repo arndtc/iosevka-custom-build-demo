@@ -1,72 +1,38 @@
-# This is my Iosevka Fixed Custom font
-# The goal is to get close to the size of the following font
-# - Misc-Fixed-medium-R-*-*-13-120-75-75-C-120-ISO10646-1
+
 [buildPlans.IosevkaFixedCustom]
 family = "Iosevka Fixed Custom"
 spacing = "fixed"
 serifs = "sans"
-noLigation = true # Fixed by defintion doesn't have ligation
 noCvSs = true
-exportGlyphNames = false # Useful for terminals like Kitty
-outFormat = ["ttf"] # Only generte the standard desktop fonts
+exportGlyphNames = false
 
-[buildPlans.IosevkaFixedCustom.variants.design]
-# Select differnt character customization
-# Numbers
-zero = "tall-slashed"  # Prefer Zero with a slash
-one = "base" # One with a base and slant
-# Capital letters
-capital-x = "straight-serifless"            # Ensures the 'x' doesn't look blurred
-# Lower case letters
-l = "serifed-flat-tailed"   # Better legibility for 'l'
-r = "narrow-hook-serifless" # Thinner, cleaner 'r'
-w = "rounded-vertical-sides-serifless" #Better legibility for 'w'
-x = "straight-serifless"            # Ensures the 'x' doesn't look blurred
+  [buildPlans.IosevkaFixedCustom.variants]
+  inherits = "ss03"
 
-#not there missind dynamic range on letters like "d" and "l" and a very tall
-#[buildPlans.IosevkaFixedCustom.metricOverride]
-#leading = 1000    # Tightest vertical spacing
-#1 #cap = 700         # Shorter caps
-#1 #xheight = 510     # Balanced lowercase
-#cap = 640        # SHORTER CAPS: Matches the low profile on the left
-#xheight = 460    # SHORTER LOWERCASE: Creates that "squat" look
-#ascender = 660   # PULLS DOWN TOPS: Forces letters like 'h' or 'k' to be short
-#descender = -180 # PULLS UP BOTTOMS: Makes the descent very shallow
+[buildPlans.IosevkaFixedCustom.weights.Regular]
+shape = 400
+menu = 400
+css = 400
 
-# Too blocky an hard to read. but smaller terminal with overlapping lines
-#[buildPlans.IosevkaFixedCustom.metricOverride]
-#leading = 900      # DRASTIC REDUCTION: Forces the rows to be closer together
-#xheight = 420      # SHRINK THE 'a': This physically makes lowercase letters shorter
-#cap = 660          # Lowered to match the new squat look
-#ascender = 750     # RESTORE THE 'l' & 'd': Gives back the height for legibility
-#descender = -200   # Subtle tail for 'p' and 'g'
-#win-ascent = 750   # Technical fix for Windows/X11 clipping
-#win-descent = 250  # Technical fix for Windows/X11 clipping
+[buildPlans.IosevkaFixedCustom.weights.Light]
+shape = 300
+menu = 300
+css = 300
 
-#This got too big
-#[buildPlans.IosevkaFixedCustom.metricOverride]
-#leading = 1050     # INCREASE: Gives a tiny bit of air back between lines
-#xheight = 490      # INCREASE: Makes the body of 'a' and 'o' readable again
-#cap = 710          # INCREASE: Aligns better with a 13px total height
-#ascender = 750     # KEEP: Keeps the 'l' and 'd' tall for clarity
-#descender = -230   # DEEPEN: Prevents 'p' and 'g' from looking like 'o'
-
-[buildPlans.IosevkaFixedCustom.metricOverride]
-leading = 1000    # RESTORE: Matches the 13px row height of the left
-xheight = 460     # TIGHTEN: Shrinks the 'a' body for better line spacing
-cap = 680         # TIGHTEN: Keeps capitals from pushing the line height
-ascender = 750    # KEEP: Essential for 'l' and 'd' legibility
-descender = -210  # TIGHTEN: Prevents the tails from being too long
+[buildPlans.IosevkaFixedCustom.weights.SemiBold]
+shape = 600
+menu = 600
+css = 600
 
 [buildPlans.IosevkaFixedCustom.widths.Normal]
-shape = 515       # Extremely narrow, matching fixed 6x13
+shape = 500
 menu = 5
 css = "normal"
 
-[buildPlans.IosevkaFixedCustom.weights.Regular]
-shape = 410
-menu = 400
-css = 400
+[buildPlans.IosevkaFixedCustom.widths.SemiCondensed]
+shape = 456
+menu = 4
+css = "semi-condensed"
 
 [buildPlans.IosevkaFixedCustom.slopes.Upright]
 angle = 0
@@ -74,10 +40,11 @@ shape = "upright"
 menu = "upright"
 css = "normal"
 
-[buildPlans.IosevkaFixedCustom.weights.Bold]
-shape = 700
-menu = 700
-css = 700
+[buildPlans.IosevkaFixedCustom.slopes.Italic]
+angle = 9.4
+shape = "italic"
+menu = "italic"
+css = "italic"
 
 [buildPlans.IosevkaFixedCustom.slopes.Italic]
 angle = 9.4
