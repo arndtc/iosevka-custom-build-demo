@@ -13,7 +13,6 @@ outFormat = ["ttf"] # Only generte the standard desktop fonts
 [buildPlans.IosevkaFixedCustom.variants.design]
 zero = "tall-slashed"  # Prefer Zero with a slash
 one = "base" # One with a base and slant
-a = "single-story"                           # Matches 'o' roundness better
 l = "serifed-flat-tailed"   # Better legibility for 'l'
 o = "oval"                                    # More rounded shape
 g = "single-storey"                           # Cleaner at small sizes
