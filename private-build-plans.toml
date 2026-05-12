@@ -52,12 +52,12 @@ x = "straight-serifless"            # Ensures the 'x' doesn't look blurred
 #descender = -230   # DEEPEN: Prevents 'p' and 'g' from looking like 'o'
 
 # This is looking better It is basucally the same as the Ubuntu font
-[buildPlans.IosevkaFixedCustom.metricOverride]
-leading = 1000    # RESTORE: Matches the 13px row height of the left
-xheight = 460     # TIGHTEN: Shrinks the 'a' body for better line spacing
-cap = 680         # TIGHTEN: Keeps capitals from pushing the line height
-ascender = 750    # KEEP: Essential for 'l' and 'd' legibility
-descender = -210  # TIGHTEN: Prevents the tails from being too long
+#[buildPlans.IosevkaFixedCustom.metricOverride]
+#leading = 1000    # RESTORE: Matches the 13px row height of the left
+#xheight = 460     # TIGHTEN: Shrinks the 'a' body for better line spacing
+#cap = 680         # TIGHTEN: Keeps capitals from pushing the line height
+#ascender = 750    # KEEP: Essential for 'l' and 'd' legibility
+#descender = -210  # TIGHTEN: Prevents the tails from being too long
 
 #Trying to make it a bit smaller letter height
 [buildPlans.IosevkaFixedCustom.metricOverride]
