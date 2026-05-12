@@ -51,12 +51,24 @@ x = "straight-serifless"            # Ensures the 'x' doesn't look blurred
 #ascender = 750     # KEEP: Keeps the 'l' and 'd' tall for clarity
 #descender = -230   # DEEPEN: Prevents 'p' and 'g' from looking like 'o'
 
+# This is looking better It is basucally the same as the Ubuntu font
 [buildPlans.IosevkaFixedCustom.metricOverride]
 leading = 1000    # RESTORE: Matches the 13px row height of the left
 xheight = 460     # TIGHTEN: Shrinks the 'a' body for better line spacing
 cap = 680         # TIGHTEN: Keeps capitals from pushing the line height
 ascender = 750    # KEEP: Essential for 'l' and 'd' legibility
 descender = -210  # TIGHTEN: Prevents the tails from being too long
+
+#Trying to make it a bit smaller letter height
+[buildPlans.IosevkaFixedCustom.metricOverride]
+leading = 1000     # Keep the Light height for 13px of ubuntu mono font  can look at making it smaller later
+xheight = 440      # Lowers lowercase body (a, e, o) to match shorter lines
+cap = 640          # Lowers capital letters to prevent top clipping
+ascender = 700     # Pulls down the tops of tall letters (h, l, d)
+descender = -190   # Pulls up the bottom tails (p, g, y) to prevent overlap
+
+
+
 
 [buildPlans.IosevkaFixedCustom.widths.Normal]
 shape = 515       # Extremely narrow, matching fixed 6x13
